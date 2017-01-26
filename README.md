@@ -31,6 +31,7 @@ var month = new MonthDate(new Date(1483228800000));
     [ '2017-01-08', '2017-01-09', '2017-01-10', '2017-01-11', '2017-01-12', '2017-01-13', '2017-01-14' ],
     ...
 ]
+//ps: 正好2017-01-01 是星期一
 ~~~
 
 **getFirstDay**，**getLastDay**
@@ -45,7 +46,8 @@ var month = new MonthDate(new Date(1483228800000));
 日期的格式化方法。
 
 ~~~javascript
-MonthDate.dateFormat(new Date(), '%Y-%m-%d');
+MonthDate.dateFormat(new Date(), '%Y-%m-%d %H:%M:%S');
+//2017-01-01 13:11:12
 ~~~
 
 **addDate**  
@@ -56,7 +58,7 @@ MonthDate.addDate(new Date(), 2);
 ~~~
 
 **getWeekDays**  
-获取某一天所的一周日期列表。
+获取某一天所在一周日期列表。
 
 ~~~javascript
 MonthDate.getWeekDays(new Date());
